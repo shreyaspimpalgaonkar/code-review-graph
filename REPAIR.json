@@ -1,0 +1,17 @@
+{
+  "changed": [
+    "instruction",
+    "suite"
+  ],
+  "declined": [
+    {
+      "finding": "H01",
+      "why": "The instruction/suite portions were repaired, including mandatory transitive reconstruction, whole-build writer exclusion, resolver rollback, implementation-sensitive construction context, warning semantics, and internal integrity evidence. The remaining request to expose tests/test_outputs.py in the agent image was not applied: environment/Dockerfile contains only repository and test-tool dependencies, while frame/test.patch is verifier payload; moving the graded suite across that boundary would disclose verifier-only material. The instruction now expressly identifies repository tests as regression checks and the complete behavioral contract as authoritative. The request for non-binary reward is policy-only reward-shape commentary and is not a task-repair surface."
+    },
+    {
+      "finding": "H02",
+      "why": "Task-owned instruction and suite defects were repaired. The claimed dead `between` invocation is refuted by the current bytes: frame/test.sh:361-365 runs the attested base command, reaps processes, checks hooks, and then begins the canary comment; there is no `grader.py between` invocation. The seal fallback, report-artifact early exits, patch-capture mechanics, and regression-frame mechanics are shared-frame findings, so they were not reimplemented on this task surface. Low-severity metadata/comment cleanup was not required to resolve grading behavior."
+    }
+  ],
+  "notes": "Aligned the contract with the intended reference behavior: the instruction now requires one complete construction context, implementation-sensitive parser/resolver compatibility, exact transitive reverse-dependent reconstruction, whole-build exclusive writer access, atomic candidate publication, rollback on resolver/optional-stage failure, narrow new recovery warnings, and private context/integrity representations. These requirements oblige the existing F04/F05/F09/F15 assertions and resolve H03/G01's shared-contract concern. The suite's public-class guard now enforces the newly explicit sentence, `Do not add a new public class to code_review_graph.graph`, against the complete baseline public-class set (including FlowAdjacency), rather than using the misleading `graph` name-substring filter."
+}
